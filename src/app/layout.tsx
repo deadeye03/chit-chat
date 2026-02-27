@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/Themeprovider";
 import ConvexClientProvider from "@/components/ConvexClientProvider";
 import { ClerkProvider } from "@clerk/nextjs";
 import UserSyncWrapper from "@/components/UserSyncWrapper";
+import Providers from "@/components/ProgressBarProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,8 +45,10 @@ export default function RootLayout({
               disableTransitionOnChange
             >
               <UserSyncWrapper>
-                <Navbar />
-                {children}
+                <Providers>
+                  <Navbar />
+                  {children}
+                </Providers>
               </UserSyncWrapper>
             </ThemeProvider>
           </ConvexClientProvider>

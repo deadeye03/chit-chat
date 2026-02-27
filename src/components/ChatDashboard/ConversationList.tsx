@@ -1,8 +1,8 @@
 "use client";
 
 import { useQuery } from "convex/react";
-import { api } from "../../convex/_generated/api";
-import { Id } from "../../convex/_generated/dataModel";
+import { api } from "../../../convex/_generated/api";
+import { Id } from "../../../convex/_generated/dataModel";
 import { useUserSync } from "@/hooks/useUserSync";
 import { formatShortTimestamp } from "@/utils/dateUtils";
 import { useRouter, useParams } from "next/navigation";

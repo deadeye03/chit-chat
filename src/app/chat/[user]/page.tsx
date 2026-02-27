@@ -3,9 +3,9 @@
 import React, { useEffect } from "react";
 import ChatSection from "@/components/ChatDashboard/ChatSection";
 import { useMutation } from "convex/react";
-import { api } from "../../../convex/_generated/api";
+import { api } from "../../../../convex/_generated/api";
 import { useUserSync } from "@/hooks/useUserSync";
-import { Id } from "../../../convex/_generated/dataModel";
+import { Id } from "../../../../convex/_generated/dataModel";
 import { Loader2 } from "lucide-react";
 
 export default function ChatPage({

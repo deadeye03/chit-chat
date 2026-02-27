@@ -1,7 +1,7 @@
 "use client";
 
 import { useQuery, useMutation } from "convex/react";
-import { api } from "../../convex/_generated/api";
+import { api } from "../../../convex/_generated/api";
 import { useUserSync } from "@/hooks/useUserSync";
 import { useRouter } from "next/navigation";
 import { Loader2 } from "lucide-react";
